@@ -19,5 +19,9 @@ body {
 
 #container {
   display: flex;
-  background-color: grey;
+}
+
+.buzz{
+  width:30%;
+  height:30%; 
 }
