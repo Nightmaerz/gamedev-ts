@@ -10,4 +10,4 @@ When you hit the spacebar Buzz must fly / jump at least 100px
 
 **Step 3 - add some collision detection**
 
-Create a coin above Buzz his head. When buzz jumps and hits the coin. The coin should dissapear.
+Create a coin above Buzz his head. When buzz jumps and hits the coin the coin should dissapear.
