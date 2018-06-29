@@ -1,33 +1,68 @@
 html {
   box-sizing: border-box;
-  font-size: 10px;
+  height: 100%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body{
-  background-image: url('../images/starfield.png');
+body {
+  height: 100%;
+  overflow: hidden;
 }
 
-.container{
+img {
+  width: 100%;
+}
+
+#container {
+  /* display: flex; */
+}
+
+.buzz {
+  margin: auto;
   position: absolute;
-  overflow: auto;
   left: 0;
-  right: 0;
-  top: 0;
   bottom: 0;
-  border-left: 10px solid orange;
-  border-right: 10px solid orange;
+  right: 0;
+  width: 150px;
+  /*essential for determining offset*/
+  height: 150px;
+  /*essential for determining offset*/
 }
 
-.rocket{
-  margin:auto;
+@keyframes beating {
+  to {transform: scale(1.2);}
+}
+
+.coin {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
   position: absolute;
-  /* left:0;
-  bottom:0;
-  right:0; */ 
-  width: 50px; /*essential for determining offset*/
-  height: 75px; /*essential for determining offset*/
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100px;
+  /*essential for determining offset*/
+  height: 100px;
+  /*essential for determining offset*/
+  z-index: -1;
+  animation: beating .75s infinite;
+}
+
+.scoreboard {
+  position: fixed;
+  margin: 10px;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  background-color: red;
+}
+
+.flying{
+  transition: width 2s, height 2s, background-color 2s, transform 2s;  
 }
